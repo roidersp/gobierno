@@ -15,6 +15,7 @@
 .indepth_docs_content{
 	width: 800%;
 	position: relative;
+	height: 550px;
 }
 
 .indepth_docs{
@@ -47,9 +48,8 @@
 
 .indepth_docs_description{
 	height: 181px;
-	background-color: white;
 	bottom:0px;
-	padding: 0 20px;
+	padding: 0 10px;
 	position: absolute;
 	display: table;
 }
@@ -63,14 +63,40 @@
 
 .indepth_docs_title{
 	margin-bottom: 10px;
-	font-size: 20px;
+	margin-top: 10px;
+	font-size: 24px;
 	font-weight: 600;
 	font-family:"Roboto";
+	color: #FFC82B;
 }
 
 .indepth_docs_text{
 	font-size: 16px;
 	font-family:"Roboto";
+	color: white;
+	padding-left: 34px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: auto 95%;
+	height: 26px;
+	line-height: 26px;
+	margin: 8px 0px;
+}
+
+.indepth_docs_text.liga{
+	background-image: url(../images/icono_estrella.png);
+}
+
+.indepth_docs_text.apoyo{
+	background-image: url(../images/icono_apoyo.png);
+}
+
+.indepth_docs_text.pesos{
+	background-image: url(../images/icono_dinero.png);
+}
+
+.indepth_docs_text.tiempo{
+	background-image: url(../images/icono_tiempo.png);
 }
 
 .indepth_docs_balls{
@@ -80,32 +106,47 @@
 }
 
 .indepth_docs_ball{
-	width: 15px;
-	height: 15px;
+	width: 24px;
+	height: 24px;
 	border-radius: 50%;
 	float: left;
-	background-color: #038aca;
+	background-color: transparent;
 	margin: 0 15px;
+	border: 1px solid transparent;
+}
+
+.indepth_docs_ball div{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	float: left;
+	margin: 4px;
+	background-color: #FFC82B;
 }
 
 .indepth_docs_ball.active{
-	background-color: transparent;
-	border: 4px solid #038aca;
-	width: 7px;
-	height: 7px;
+	border: 1px solid #FFC82B;
+	
 }
 
 
 
 
 
-.indepth_docs_ball:hover{
-	background-color: #2092ef;
+
+
+.indepth_docs_ball div:hover{
+	border: 3px solid #FFC82B;
+	background-color: transparent;
+	width: 10px;
+	height: 10px;
 }
 
-.indepth_docs_ball.active:hover{
-	background-color: transparent;
-	border: 4px solid #2092ef;
+.indepth_docs_ball.active div:hover{
+	border: 0px;
+	background-color: #FFC82B;
+	width: 16px;
+	height: 16px;
 }
 
 
@@ -510,7 +551,7 @@ margin-top: 15px;
 }
 
 #indepth_intro{
-	background-image: url(../images/Pixel_Foto1.jpg);
+	background-image: url(../images/Pixel_Foto2.jpg);
 	color: white;
 }
 
@@ -523,8 +564,8 @@ margin-top: 15px;
 }
 
 #indepth_page1{
-	background: url(../images/Foto_1.jpg) center bottom no-repeat, url(../images/Pixel_Foto1.jpg) center repeat;
-	height: 2450px;	
+	background: url(../images/Foto_2.jpg) center bottom no-repeat, url(../images/Pixel_Foto2.jpg) center repeat;
+	height: 2650px;	
 	color: 
 }
 
