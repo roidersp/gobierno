@@ -10,6 +10,10 @@ var numeroImages2=8;
  var intervalID2;
 var posicion_slider2=0;
 
+$(document).on("click","path",function(){
+	alert("test");
+})
+
 $(document).on("click", "#indepth_button_ver" ,function(){
 		var position = $(".indepth_content_top").position();
 		$('html, body').animate({

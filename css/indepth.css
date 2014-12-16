@@ -5,6 +5,15 @@
 	height: 100% !important;
 }
 
+.land{
+	fill: none;
+	fill-opacity: 1;
+	stroke:white;
+	stroke-opacity: 1;
+	stroke-width:0.5;
+}
+
+
 .indepth_docs_container{
 	width: 1024px;
 	margin-left: -107px;
@@ -149,20 +158,36 @@
 	height: 16px;
 }
 
+/********* mapa ***********/
 
-#indepth_page4a{
-
-}
-
-#indepth_page4a .indepth_page_body{
-	width: 1024px;
-	margin: auto;
-	text-align: center;
-}
-
-#indepth_page4a img{
+.indepth_mapa{
+	width: 1000px;
+	height: 600px;
 	margin: auto;
 }
+
+.indepth_mapa img{
+	width: 100%;
+	height: 100%;
+}
+
+.indepth_mapa_left{
+	float: left;
+	width: 750px;
+	height: 100%;
+}
+
+.indepth_mapa_r{
+	float: right;
+	width: 250px;
+}
+
+#indepth_mapa_map{
+	width: 100%;
+	height: 100%
+}
+
+/********* fin mapa *******/
 
 /*div {
   animation-duration: 0.1s;
@@ -590,6 +615,17 @@ margin-top: 15px;
  #indepth_page3{
 	background: url(../images/Pixel_Foto1.jpg) center repeat;
 }
+
+#indepth_page6{
+		background-image: url(../images/background.jpg);
+		background-position: center center;
+		background-image: cover;
+}
+
+#indepth_page6 .indepth_text{
+	color: white;
+}
+
 .indepth_text{
 	width: 600px;
 	margin:auto;
