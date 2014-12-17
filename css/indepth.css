@@ -170,7 +170,7 @@
 }
 
 .indepth_mapa_left{
-	max-width: 1110px;
+	max-width: 1020px;
 	margin: auto;
 	display: table;
 }
@@ -225,6 +225,7 @@
 
 .indepth_box .indepth_docs_title{
 	font-size: 32px;
+	line-height: 30px;
 
 }
 
@@ -245,7 +246,7 @@
 
 .indepth_box_estado{
 	color: rgba(255, 255, 255, 0.8);
-	font-size: 34px;
+	font-size: 32px;
 	padding: 10px 0px;
 	text-align: center;
 	text-transform: uppercase;
@@ -823,13 +824,15 @@ color: #878787;
 /*** Movil ****/
 @media screen and (max-width:1109px) {
 	.indepth_mapa_left{
-		max-width: 740px;
+		max-width: 680px;
 	}
 }
 
 @media screen and (max-width:1109px) {
 	.indepth_mapa_left{
 		max-width: 320px;
+		margin: 0px auto;
+		margin-bottom: 10px;
 	}
 }
 
