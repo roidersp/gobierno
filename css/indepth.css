@@ -170,7 +170,7 @@
 }
 
 .indepth_mapa_left{
-	max-width: 1200px;
+	max-width: 1110px;
 	margin: auto;
 	display: table;
 }
@@ -194,24 +194,25 @@
 }
 .indepth_box{
 	float: left;
-	width: 350px;
+	width: 320px;
 	margin: 10px;
 }
 
 
 .indepth_box .indepth_box_description{
-		padding: 15px 20px;
-		background: rgba(0, 0, 0, 0.53);
+		padding: 15px 15px;
+		height: 390px;
 		float: left;
 		overflow: hidden;
-		width: 310px;
+		width: 290px;
 		
 
 }
 
 .indepth_box_description_container{
-	width: 350px;
+	width: 320px;
 	overflow: hidden;
+	background: rgba(0, 0, 0, 0.53);
 }
 
 .indepth_box .indepth_docs_description_content{
@@ -229,7 +230,7 @@
 
 .indepth_box .indepth_docs_text{
 	padding-left: 60px;
-	background-size: auto 98%;
+	background-size: auto 38px;
 	height: 40px;
 	font-size: 24px;
 	margin: 20px 0px;
@@ -820,6 +821,17 @@ color: #878787;
 }
 
 /*** Movil ****/
+@media screen and (max-width:1109px) {
+	.indepth_mapa_left{
+		max-width: 740px;
+	}
+}
+
+@media screen and (max-width:1109px) {
+	.indepth_mapa_left{
+		max-width: 320px;
+	}
+}
 
 @media screen and (max-width:1023px) {
 	body{
