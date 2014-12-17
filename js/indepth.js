@@ -34,6 +34,17 @@ var indepth_sizeAdjust = function(firstTime){
 }
 
 
+var slider_estados = function(){
+	$(document).on("click",".indepth_box_buttom_item",function(){
+		var estado=$(this).attr("estado");
+		var estado_numero= $(this).attr("num");
+		console.log(estado+"-"+estado_numero);
+		$("#indepth_"+estado).animate({"margin-left":(-estado_numero*100)+"%"},700);
+		$("#"+estado +" .indepth_box_buttom_item").removeClass('active');
+		$(this).addClass('active');
+	})
+}
+
 
 var startslider2 =function(){
 	slider_on2=true;
@@ -189,7 +200,8 @@ if (window.DISQUS) {
 $(document).ready(function(){
 	indepth_sizeAdjust(true);
 	indepth_preloadImgs();
-	 //startslider2();
+	slider_estados();
+	 startslider2();
 	var ventana_alto = $(window).height();
 	//$("#indepth_break_2").css("height",)
 	if(navigator.platform == 'iPad' || navigator.platform == 'iPhone' || navigator.platform == 'iPod' || navigator.platform == 'Android')

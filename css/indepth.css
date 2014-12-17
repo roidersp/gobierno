@@ -6,11 +6,12 @@
 }
 
 .land{
-	fill: none;
+	fill: red;
 	fill-opacity: 1;
 	stroke:white;
 	stroke-opacity: 1;
 	stroke-width:0.5;
+	
 }
 
 
@@ -161,25 +162,24 @@
 /********* mapa ***********/
 
 .indepth_mapa{
-	width: 1000px;
-	height: 600px;
 	margin: auto;
 }
 
 .indepth_mapa img{
 	width: 100%;
-	height: 100%;
 }
 
 .indepth_mapa_left{
-	float: left;
-	width: 750px;
-	height: 100%;
+	max-width: 1200px;
+	margin: auto;
+	display: table;
 }
 
 .indepth_mapa_r{
-	float: right;
-	width: 250px;
+	width: 700px;
+	height: 100%;
+	position: relative;
+	margin: 30px auto;
 }
 
 #indepth_mapa_map{
@@ -187,14 +187,109 @@
 	height: 100%
 }
 
+.indepth_mapa_r svg{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.indepth_box{
+	float: left;
+	width: 350px;
+	margin: 10px;
+}
+
+
+.indepth_box .indepth_box_description{
+		padding: 15px 20px;
+		background: rgba(0, 0, 0, 0.53);
+		float: left;
+		overflow: hidden;
+		width: 310px;
+		
+
+}
+
+.indepth_box_description_container{
+	width: 350px;
+	overflow: hidden;
+}
+
+.indepth_box .indepth_docs_description_content{
+	display: table-cell;
+	color: #818181;
+	vertical-align: middle;
+	font-family:"Roboto";
+	height: 468px;
+}
+
+.indepth_box .indepth_docs_title{
+	font-size: 32px;
+
+}
+
+.indepth_box .indepth_docs_text{
+	padding-left: 60px;
+	background-size: auto 98%;
+	height: 40px;
+	font-size: 24px;
+	margin: 20px 0px;
+	display: table;
+	vertical-align: middle;
+}
+
+.indepth_box .indepth_docs_text div{
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.indepth_box_estado{
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 34px;
+	padding: 10px 0px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Roboto';
+	font-weight: 600;
+	background-color: rgba(255, 198, 43, 0.41);
+	
+}
+
+.indepth_docs_text.lugar{
+	background-image: url(../images/icono_estado.png);
+}
+
+.indepth_box_button_cont{
+	background: rgba(0, 0, 0, 0.53);
+	width: 100%;
+	height: 15px;
+	padding-bottom: 20px;
+	
+}
+
+.indepth_box_buttons{
+	height: 15px;
+	display: table;
+	margin: auto;
+	
+	
+}
+
+.indepth_box_buttom_item{
+	background: rgba(255, 198, 43, .5);
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	margin: 0 5px;
+	float: left;
+}
+
+.indepth_box_buttom_item.active{
+	background: rgba(255, 198, 43, 1);
+}
+
+
 /********* fin mapa *******/
 
-/*div {
-  animation-duration: 0.1s;
-  animation-name: changewidth;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}*/
 
 .indepth_video{
 	position: relative;
@@ -595,7 +690,7 @@ margin-top: 15px;
 }
 
 #indepth_page3{
-	background: url(../images/Pixel_Foto1.jpg) center repeat;
+	background: url(../images/Pixel_Foto2.jpg) center repeat;
 }
 
 #indepth_page4{
@@ -613,17 +708,21 @@ margin-top: 15px;
 }
 
  #indepth_page3{
-	background: url(../images/Pixel_Foto1.jpg) center repeat;
+	background: url(../images/Pixel_Foto2.jpg) center repeat;
 }
 
 #indepth_page6{
 		background-image: url(../images/background.jpg);
 		background-position: center center;
 		background-image: cover;
+		background-attachment: fixed;
+		
 }
 
 #indepth_page6 .indepth_text{
 	color: white;
+	background-color: rgba(0, 0, 0, 0.41);
+	padding: 30px 50px;
 }
 
 .indepth_text{
