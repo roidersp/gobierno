@@ -14,6 +14,10 @@
 	
 }
 
+#indepth_page7{
+	background-color: #B8D9D2;
+}
+
 
 .indepth_docs_container{
 	width: 1024px;
@@ -511,6 +515,7 @@
 	color:#FFF;
 	text-transform: uppercase;
 	font-weight: 700;
+	
 }
 
 #indepth_cover .indepth_subtitle{
@@ -553,7 +558,7 @@
 	font-weight: 600;
 	text-transform: uppercase; /* comentar para quitar mayusculas */
 	text-align: center; /* ajustar alineacion (justify, left, right o center) */	
-	color: #000;
+	color: white;
 }
 
 .indepth_page_content .indepth_subtitle{
@@ -828,11 +833,14 @@ color: #878787;
 	}
 }
 
-@media screen and (max-width:1109px) {
+@media screen and (max-width:679px) {
 	.indepth_mapa_left{
 		max-width: 320px;
 		margin: 0px auto;
 		margin-bottom: 10px;
+	}
+	.indepth_box{
+		margin:  10px 0;
 	}
 }
 
@@ -994,9 +1002,11 @@ color: #878787;
 		max-height: 700px;
 	}
 	
-	.indepth_break .indepth_parallax_back{
-		background-size: auto 100%;
+	#indepth_cover .indepth_parallax_back{
+		background-size: cover;
 		background-attachment: scroll;
+		background-image: url(../images/portada_mobil.jpg);
+		background-repeat: no-repeat;
 	}
 	
 	#indepth_break_5 .indepth_parallax_back{
@@ -1008,6 +1018,10 @@ color: #878787;
 	.indepth_break .indepth_parallax_back .indepth_text_container{
 		padding: 0 10px;
 	}
+	
+	.indepth_infografia_container img{
+		width: 100%;
+	}
 
 
 
@@ -1017,6 +1031,11 @@ color: #878787;
 	.indepth_quote_container{
 		width: 100%;
 	}
+	
+	.indepth_mapa_r{
+		width: 100%;
+	}
+	
 }
 
 @media screen and (max-width: 740px) {
@@ -1136,10 +1155,7 @@ color: #878787;
 		height: 650px;
 	}
 	
-	#indepth_cover .indepth_parallax_back{
-		background-size: auto 540px;
-		background-position: 60% 50%;
-	}
+
 	
 	.indepth_image_left,.indepth_image_r{
 		float: none;
@@ -1183,7 +1199,15 @@ color: #878787;
 	#indepth_cover{
 		height: 540px;	
 	}
-
+	
+	#indepth_page6 .indepth_text{
+		padding: 15px 3px;
+	}
+	
+	.indepth_docs_ball{
+		margin: 10px 7px;
+	}
+	
 	#indepth_page4{
 		background-size: 414px auto, 1920px auto;
 		height: 1500px;
@@ -1191,7 +1215,7 @@ color: #878787;
 
 	#indepth_page1{
 		background-size: 414px auto, 1920px auto;
-		height: 1300px;
+		height: 2200px;
 	}
 
 	.indepth_docs_container{
@@ -1226,13 +1250,7 @@ color: #878787;
 		width: 100% !important;
 	}
 	
-	.indepth_infografia_container{
-		width: 300px;
-	}
-	
-	.indepth_page_infografia img{
-		width: 300px;
-	}
+
 	
 	#info_controls{
 		width: 300px;
@@ -1350,6 +1368,20 @@ color: #878787;
 @media screen and (max-width: 360px) {
 			.indepth_docs_ball {
 margin: 0 12px;
+}
+
+#indepth_page1{
+	height: 2600px;
+}
+
+#indepth_page4{
+	height: 2000px;
+}
+	}
+	
+	@media screen and (max-width: 320px) {
+.indepth_box{
+	margin:  10px 0;
 }
 	}
 
